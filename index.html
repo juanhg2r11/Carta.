@@ -225,14 +225,15 @@
         }
         
         .letter.show {
-            transform: translate(-50%, -180px);
+            transform: translate(-50%, -240px);
             height: auto;
             min-height: 400px;
-            max-height: 70vh;
+            max-height: 75vh;
             overflow-y: auto;
             z-index: 25;
             width: 90%;
             max-width: 350px;
+            padding-bottom: 40px;
         }
         
         .letter-pattern {
@@ -371,7 +372,8 @@
             
             .letter.show {
                 min-height: 350px;
-                transform: translate(-50%, -150px);
+                transform: translate(-50%, -200px);
+                max-height: 70vh;
             }
             
             .letter-title {
@@ -385,7 +387,14 @@
         
         @media (min-height: 800px) {
             .letter.show {
-                transform: translate(-50%, -220px);
+                transform: translate(-50%, -280px);
+            }
+        }
+        
+        @media (max-height: 700px) {
+            .letter.show {
+                transform: translate(-50%, -180px);
+                max-height: 65vh;
             }
         }
     </style>
@@ -394,7 +403,7 @@
     <div class="hearts-container" id="heartsContainer"></div>
     
     <div class="container">
-        <div class="hint" id="hint"> Aplasta en el sello de cera </div>
+        <div class="hint" id="hint">Aplasta en el sello de cera</div>
         
         <div class="envelope-wrapper">
             <div class="envelope" id="envelope">
